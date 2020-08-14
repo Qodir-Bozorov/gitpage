@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+*::before,
+*after{
+  box-sizing: inherit;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: (0 0 0 0);
+  overflow: hidden;
+}
+
+
+li {
+  width: 990px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+li>.checkbox:checked+ h4 {
+  background-color: #14ffb1;
+  margin: 5px;
+  padding: 30px;
+}
+li > .checkbox + h4 {
+  background-color: #ff00004f;
+  margin: 5px;
+  padding: 30px;
+}
+li p {
+  background-color: #2db6b6;
+  margin:5px;
+  padding: 22px;
+  transition: background-color 500ms;
+}
+li p:hover {
+  background-color:#4ce6e6;
+  cursor: pointer;
+}
+li h4 {
+  width: 1200px;
+}
